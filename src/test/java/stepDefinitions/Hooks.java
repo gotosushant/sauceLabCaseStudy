@@ -32,7 +32,7 @@ public class Hooks {
 	
 	@After
 	public void afterEachScenario() {
-		System.out.println("Executing hooks after scenario");
+//		System.out.println("Executing hooks after scenario");
 		driver.quit();
 	}
 }

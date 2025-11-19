@@ -11,4 +11,9 @@ Given I navigate to the login page
 When I enter the username "standard_user" and password "secret_sauce"
 Then I should be able to login successfully
 
+#This test should fail
+Scenario: Verify Product Page Elements
+Given I navigate to the login page
+Then I should be able to login successfully
+
 

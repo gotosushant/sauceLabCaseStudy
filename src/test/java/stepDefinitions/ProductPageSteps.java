@@ -1,11 +1,7 @@
 package stepDefinitions;
 
-import org.testng.Assert;
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import pages.LoginPage_pageElements;
 import pages.ProductPage_pageElements;
 

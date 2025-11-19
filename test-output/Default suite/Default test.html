@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 18 10:32:18 IST 2025</td>
+<td>Started on:</td><td>Wed Nov 19 10:21:11 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11199 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19016 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,75 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGRunner.testNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testNGRunner.testNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Product Page Elements", "Tests for sauce demo product page"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.login_logo&quot;}
+  (Session info: chrome=142.0.7444.175)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4df224f2d8b6c0f0a4384ebae353fad3, findElement {using=class name, value=login_logo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.175, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\gotos\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1753}, goog:processID: 12004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1753/devtool..., se:cdpVersion: 142.0.7444.175, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4df224f2d8b6c0f0a4384ebae353fad3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at pages.LoginPage_pageElements.ensureThatLoginPageIsDisplayed(LoginPage_pageElements.java:35)
+	at pages.LoginPage_pageElements.ensureLoginPageUIElements(LoginPage_pageElements.java:61)
+	at stepDefinitions.LoginPageSteps.login_page_ui_elements_should_be_proper(LoginPageSteps.java:25)
+	at ✽.Login page UI elements should be proper(file:///D:/sauceLabs_caseStudy/bdd_code/sauceLabDemo/src/test/java/features/productPage.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace327986890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace327986890'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.login_logo&quot;}
+  (Session info: chrome=142.0.7444.175)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4df224f2d8b6c0f0a4384ebae353fad3, findElement {using=class name, value=login_logo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.175, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\gotos\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1753}, goog:processID: 12004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1753/devtool..., se:cdpVersion: 142.0.7444.175, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4df224f2d8b6c0f0a4384ebae353fad3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at pages.LoginPage_pageElements.ensureThatLoginPageIsDisplayed(LoginPage_pageElements.java:35)
+	at pages.LoginPage_pageElements.ensureLoginPageUIElements(LoginPage_pageElements.java:61)
+	at stepDefinitions.LoginPageSteps.login_page_ui_elements_should_be_proper(LoginPageSteps.java:25)
+	at ✽.Login page UI elements should be proper(file:///D:/sauceLabs_caseStudy/bdd_code/sauceLabDemo/src/test/java/features/productPage.feature:7)
+</pre></div></td>
+<td>12</td>
+<td>testNGRunner.testNGTestRunner@43bc63a3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,14 +145,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNGRunner.testNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testNGRunner.testNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Login Page Elements", "Tests for sauce demo login page"</td>
-<td></td>
-<td>8</td>
-<td>testNGRunner.testNGTestRunner@43bc63a3</td></tr>
-<tr>
 <td title='testNGRunner.testNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testNGRunner.testNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to login successfully to the application", "Tests for sauce demo login page"</td>
 <td></td>
 <td>2</td>
+<td>testNGRunner.testNGTestRunner@43bc63a3</td></tr>
+<tr>
+<td title='testNGRunner.testNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testNGRunner.testNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Login Page Elements", "Tests for sauce demo login page"</td>
+<td></td>
+<td>3</td>
 <td>testNGRunner.testNGTestRunner@43bc63a3</td></tr>
 </table><p>
 </body>
